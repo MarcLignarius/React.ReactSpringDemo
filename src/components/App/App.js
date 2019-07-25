@@ -13,12 +13,12 @@ const App = () => {
 
 	return (
 		<animated.div className="App" style={fade}>
-			<h1>React Spring</h1>
+			<h1>Practicing React Spring</h1>
+			<hr/>
 			<main>
 				<Toggle />
 			</main>
 		</animated.div>
-	
 	);
 };
 
