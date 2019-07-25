@@ -7,9 +7,7 @@ const App = () => {
 		from: {
 			opacity: 0
 		},
-		to: {
-			opacity: 1
-		}
+		opacity: 1
 	});
 
 	return (
@@ -18,6 +16,5 @@ const App = () => {
 		</animated.div>
 	);
 };
-
 
 export default App;
