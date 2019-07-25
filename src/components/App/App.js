@@ -1,7 +1,10 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './App.css';
-import Toggle from '../Toggle/Toggle'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav from '../Nav/Nav';
+import Home from '../Home/Home';
+import Toggle from '../Toggle/Toggle';
 
 const App = () => {
 	const fade = useSpring({
@@ -12,13 +15,15 @@ const App = () => {
 	});
 
 	return (
-		<animated.div className="App" style={fade}>
-			<h1>Practicing React Spring</h1>
-			<hr/>
-			<main>
-				<Toggle />
-			</main>
-		</animated.div>
+		<Router>
+			<animated.div style={fade}>
+				<Nav />
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/toggle' component={Toggle} />
+				</Switch>
+			</animated.div>
+		</Router>
 	);
 };
 

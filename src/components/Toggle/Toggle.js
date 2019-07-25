@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated} from 'react-spring';
+import './Toggle.css';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
@@ -25,11 +26,11 @@ const Toggle = () => {
 
 
 	return (
-		<div>
+		<div className='centeredMarginTop'>
 			<StyledButton onClick = {() => setToggle(!isToggled)}>
 				Click Me!
 			</StyledButton>
-			<animated.h1 style={fade}>Oh hey!</animated.h1>
+			<animated.h1 style={fade}>Oh hi!</animated.h1>
 		</div>
 	)
 }
