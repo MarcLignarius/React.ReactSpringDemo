@@ -29,6 +29,8 @@ function Nav() {
 						<Link className='navlink' to='/'>Practicing React Spring</Link>
 					</Typography>
 					<Button color="inherit"><Link className='navlink' to='/toggle'>Toggle</Link></Button>
+					<Button color="inherit"><Link className='navlink' to='/hovercard'>Hover Card</Link></Button>
+					<Button color="inherit"><Link className='navlink' to='/flipcard'>Flip Card</Link></Button>
 				</Toolbar>
 			</AppBar>
 		</div>

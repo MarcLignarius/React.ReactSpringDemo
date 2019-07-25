@@ -19,9 +19,7 @@ const Toggle = () => {
 	const [isToggled, setToggle] = useState(false);
 	const fade = useSpring ({
 		opacity: isToggled ? 1 : 0,
-		// color: isToggled ? 'white' : 'black',
 		fontSize: isToggled ? '10em' : '1rem',
-		// transform: isToggled ? 'translate3d(0,100px,0)' : 'translate3d(0,-10px,0)'
 	})
 
 
