@@ -24,10 +24,10 @@ const Toggle = () => {
 
 	return (
 		<div>
-			<animated.h1 style={fade}>Hello</animated.h1>
 			<StyledButton onClick = {() => setToggle(!isToggled)}>
-				Toggle
+				Click Me!
 			</StyledButton>
+			<animated.h1 style={fade}>Oh hey!</animated.h1>
 		</div>
 	)
 }
