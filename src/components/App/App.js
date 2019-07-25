@@ -1,14 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useSpring, animated } from 'react-spring';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello World!</h1>
-      </div>
-    );
-  }
-}
+const App = () => {
+	const fade = useSpring({
+		from: {
+			opacity: 0
+		},
+		to: {
+			opacity: 1
+		}
+	});
+
+	return (
+		<animated.div className="App" style={fade}>
+			<h1>Hello World!</h1>
+		</animated.div>
+	);
+};
+
 
 export default App;
