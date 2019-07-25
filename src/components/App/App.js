@@ -7,6 +7,8 @@ import Home from '../Home/Home';
 import Toggle from '../Toggle/Toggle';
 import HoverCard from '../HoverCard/HoverCard';
 import FlipCard from '../FlipCard/FlipCard';
+import FlipPage from '../FlipPage/FlipPage';
+import DragList from '../DragList/DragList';
 
 const App = () => {
 	const fade = useSpring({
@@ -24,7 +26,9 @@ const App = () => {
 					<Route exact path='/' component={Home} />
 					<Route path='/toggle' component={Toggle} />
 					<Route path='/hovercard' component={HoverCard} />
-					<Route path='/flipcard' component={FlipCard} />
+					<Route exact path='/flipcard' component={FlipCard} />
+					<Route path='/' render={()=><DragList items={'Lorem ipsum dolor sit'.split(' ')} />} />
+					<Route exact path='/flippage' component={FlipPage} />
 				</Switch>
 			</animated.div>
 		</Router>

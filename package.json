@@ -5,11 +5,14 @@
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
+    "lodash-es": "^4.17.15",
+    "lodash-move": "^1.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "react-use-gesture": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
