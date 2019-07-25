@@ -26,9 +26,11 @@ const FlipPage = () => {
     })
   })
   return props.map(({ x, display, sc }, i) => (
-    <animated.div {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-      <animated.div style={{ transform: sc.interpolate(s => `scale(${s})`), backgroundImage: `url(${pages[i]})` }} />
-    </animated.div>
+    <div className='flipStyle'>
+      <animated.div {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+        <animated.div style={{ transform: sc.interpolate(s => `scale(${s})`), backgroundImage: `url(${pages[i]})` }} />
+      </animated.div>
+    </div>
   ))
 }
 
